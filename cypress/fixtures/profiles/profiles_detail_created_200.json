@@ -1,0 +1,32 @@
+{
+  "id": "9504655f-0ef5-4a02-928d-01d0d9855ce3",
+  "party": "b9390149-290b-4b50-be85-5cfa6808d528",
+  "userType": "ZEV_MANAGER",
+  "contact": {
+    "email": "sam@ckw.ch",
+    "telephone": "+41762033341",
+    "mobile": "+41762033342"
+  },
+  "address": {
+    "street": "Seestrasse",
+    "houseNumber": "81",
+    "postalCode": "8002",
+    "city": "Zürich"
+  },
+  "personal": {
+    "salutation": "MR",
+    "firstName": "Samuel",
+    "lastName": "Kirton",
+    "title": "Entitled"
+  },
+  "isBlocked": false,
+  "username": "sam@ckw.ch",
+  "currentState": "CREATED",
+  "zevIds": [
+    "f0424837-f645-407c-a922-8e624133727a"
+  ],
+  "externalUserId": "eb991b56-c580-418d-9a82-f2980a1132b9",
+  "externalUserParties": [
+    "bea9f80e-4aa2-4934-a9a1-16a972686f70"
+  ]
+}

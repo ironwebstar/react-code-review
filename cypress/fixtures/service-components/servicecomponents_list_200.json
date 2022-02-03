@@ -1,0 +1,24 @@
+{
+  "elements": [
+    {
+      "id": "84321bff-b580-4e4c-9608-fafa8e218dc3",
+      "name": "Collection",
+      "feature": "COLLECTION"
+    },
+    {
+      "id": "bdd332e8-d1e2-46b1-8ad2-65ab65198da5",
+      "name": "ZEV Participant Management",
+      "feature": "ZEV_PARTICIPANT_MANAGEMENT"
+    },
+    {
+      "id": "ab89e598-563c-4976-b450-73cb52709e85",
+      "name": "ZEV Participant Billing",
+      "feature": "ZEV_PARTICIPANT_BILLING"
+    },
+    {
+      "id": "30f4082d-6fef-43aa-85de-25a1cf277057",
+      "name": "Powermeter Reading",
+      "feature": "POWERMETER_READING"
+    }
+  ]
+}

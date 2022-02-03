@@ -1,0 +1,61 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:cypress/recommended"
+  ],
+  "ignorePatterns": ["src/data/generated-sources/**/*.ts"],
+  "rules": {
+    "semi": ["error", "never"],
+    "quotes": ["error", "double"],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "ignorePattern": "^import\\s.+\\sfrom\\s.+$"
+      }
+    ],
+    "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": ["error", "never"],
+    "eqeqeq": ["error", "always"],
+    "no-restricted-imports": ["error", "generated-sources"],
+    "comma-style": ["error", "last"],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "comma-dangle": ["error", "always-multiline"],
+    "react/react-in-jsx-scope": "off",
+    "react/boolean-prop-naming": "error",
+    "react/prefer-stateless-function": "error",
+    "react/jsx-tag-spacing": "error",
+    "react/jsx-first-prop-new-line": "error",
+    "react/destructuring-assignment": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false,
+        "trailingComma": "all",
+        "singleQuote": false,
+        "printWidth": 120
+
+      },
+      { "usePrettierrc": true }
+    ],
+    "no-console": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

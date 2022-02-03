@@ -1,0 +1,79 @@
+variables:
+  MAJOR_VERSION: 1
+  MINOR_VERSION: 0
+  VERSION: $MAJOR_VERSION.$MINOR_VERSION.$CI_PIPELINE_ID
+
+stages:
+  - build
+  - release-docker
+  - release-dev
+  - release-test
+
+before_script:
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD registry.noumenadigital.com
+
+yarn-lint:
+  stage: build
+  tags:
+    - build
+  script:
+    - git submodule update --init --recursive
+    - source ~/.nvm/nvm.sh
+    - nvm install 16.0.0
+    - nvm use 16.0.0
+    - make -e lint
+
+yarn-test:
+  stage: build
+  tags:
+    - build
+  script:
+    - git submodule update --init --recursive
+    - source ~/.nvm/nvm.sh
+    - nvm install 16.0.0
+    - nvm use 16.0.0
+    - make -e test
+
+yarn-acceptance:
+  stage: build
+  tags:
+    - build
+  script:
+    - git submodule update --init --recursive
+    - source ~/.nvm/nvm.sh
+    - nvm install 16.0.0
+    - nvm use 16.0.0
+    - make -e acceptance
+
+docker-build:
+  stage: release-docker
+  tags: 
+    - build
+  script:
+    - git submodule update --init --recursive
+    - source ~/.nvm/nvm.sh
+    - nvm install 16.0.0
+    - nvm use 16.0.0
+    - make -e deploy
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'
+
+deploy-dev:
+  stage: release-dev
+  tags:
+    - deploy
+    - ckw-dev
+  script:
+    - make -e deploy-dev
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'
+
+deploy-test:
+  stage: release-test
+  tags:
+    - deploy
+    - ckw-test
+  script:
+    - make -e deploy-test
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'

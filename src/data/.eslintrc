@@ -1,0 +1,6 @@
+{
+  "extends": "../../.eslintrc",
+  "rules": {
+    "no-restricted-imports": ["error", { "patterns": ["**/domain/**/*", "**/app/**/*", "**/*.test"] } ]
+  }
+}

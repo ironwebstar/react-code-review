@@ -1,0 +1,4 @@
+datacenter: ckw-dev
+domain: ckw-dev.noumenadigital.com
+entrypoint: internal
+environment: "DEV"

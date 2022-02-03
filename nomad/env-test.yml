@@ -1,0 +1,4 @@
+datacenter: ckw-test
+domain: ckw-test.noumenadigital.com
+entrypoint: internal
+environment: "TEST"

@@ -1,0 +1,4 @@
+{
+  "code": "PROFILE_DELETION_MANAGING_ZEV",
+  "message": "The ZEV manager cannot be deleted as it is managing a ZEV."
+}

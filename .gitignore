@@ -1,0 +1,10 @@
+.DS_Store
+
+.parcel-cache
+dist
+dist-prod
+node_modules
+generated-sources
+coverage
+*.log
+.idea

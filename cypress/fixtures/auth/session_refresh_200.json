@@ -1,0 +1,4 @@
+{
+  "token": "cypress-jwt-stub",
+  "refreshToken": "cypress-jwt-refresh-stub"
+}

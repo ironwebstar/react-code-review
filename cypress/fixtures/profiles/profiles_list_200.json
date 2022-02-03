@@ -1,0 +1,97 @@
+{
+  "elements": [
+    {
+      "id": "80ed5cdf-c762-45fb-ac52-baa4ff58c4b3",
+      "party": "00f17343-44a5-431a-b948-541b8e6c2594",
+      "userType": "ZEV_MANAGER",
+      "contact": {
+        "email": "up@ckw.ch"
+      },
+      "address": {
+        "street": "Rathausen",
+        "houseNumber": "1",
+        "postalCode": "6032",
+        "city": "Emmen"
+      },
+      "personal": {
+        "salutation": "MR",
+        "firstName": "UP",
+        "lastName": "CKW"
+      },
+      "isBlocked": false,
+      "username": "up@ckw.ch",
+      "currentState": "CREATED",
+      "zevIds": [
+        "7ecbfdeb-c970-4122-b1ad-f59143ea68ec"
+      ],
+      "externalUserId": "3f449550-d83e-4856-814d-11b75d08713f",
+      "externalUserParties": [
+        "96f84acf-033b-4f9c-95ea-70aace112472"
+      ]
+    },
+    {
+      "id": "f3246369-48be-4ab2-9a61-4f77aedbaecf",
+      "party": "2622d7a7-af8d-4711-9eef-379d9f5a14ef",
+      "userType": "ADMIN",
+      "contact": {
+        "email": "78email@bluewin.ch"
+      },
+      "address": {
+        "street": "street 78",
+        "houseNumber": "75",
+        "postalCode": "6020",
+        "city": "Alberswil"
+      },
+      "personal": {
+        "salutation": "MS",
+        "firstName": "first name 78",
+        "lastName": "last name 78"
+      },
+      "isBlocked": false,
+      "username": "unavailable",
+      "currentState": "CREATED",
+      "zevIds": [
+        "629d6083-68b6-4d1a-9390-313db21672de"
+      ],
+      "externalUserId": "ec5fb527-6b82-4460-a8e5-28c59cf79870",
+      "externalUserParties": [
+        "2622d7a7-af8d-4711-9eef-379d9f5a14ef"
+      ]
+    },
+    {
+      "id": "f3246369-48be-4ab2-9a61-4f77aedbaec0",
+      "party": "2622d7a7-af8d-4711-9eef-379d9f5a14ef",
+      "userType": "ADMIN",
+      "contact": {
+        "email": "block@blocked.com"
+      },
+      "address": {
+        "street": "blocked",
+        "houseNumber": "71",
+        "postalCode": "5000",
+        "city": "Blocked"
+      },
+      "personal": {
+        "salutation": "MR",
+        "firstName": "X",
+        "lastName": "Blocked"
+      },
+      "isBlocked": true,
+      "username": "block@blocked.com",
+      "currentState": "CREATED",
+      "zevIds": [
+        "629d6083-68b6-4d1a-9390-313db21672de"
+      ],
+      "externalUserId": "ec5fb527-6b82-4460-a8e5-28c59cf79870",
+      "externalUserParties": [
+        "2622d7a7-af8d-4711-9eef-379d9f5a14ef"
+      ]
+    }
+  ],
+  "page": {
+    "limit": 10000,
+    "currentPage": 1,
+    "totalElements": 2,
+    "totalPages": 1
+  }
+}
